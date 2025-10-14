@@ -1,0 +1,39 @@
+BODY {
+	FONT-SIZE: 9pt; COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+.menutxt {
+	FONT-SIZE: 9pt; COLOR: white; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif; 
+	font-weight:bold;
+}
+.submenutxt {
+	FONT-SIZE: 9pt; COLOR: #FFFFFF; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif; 
+	font-weight:bold;
+}
+
+.heading {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: lighter;
+	FONT-SIZE: 14pt;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 5px 20px;
+	COLOR: #000000;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif;
+	font-style: italic;
+}
+A:visited {
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+	font-variant: small-caps;
+}
+A:link{
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+	font-variant: small-caps;
+}
+A:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+	font-variant: small-caps;
+}

@@ -1,0 +1,34 @@
+body {
+	FONT-SIZE: 9pt; COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+.txt {
+	FONT-SIZE: 9pt; COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+.subHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: black;FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+.heading {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+	COLOR: black;
+	FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif;
+	font-variant: small-caps;
+}
+.footer {
+	FONT-SIZE: 7pt; COLOR: #8e8e8e; LINE-HEIGHT: 7pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+.smalltxt {
+	FONT-SIZE: 8pt;COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+}
+A:visited {
+	COLOR: #333333;
+	text-decoration: underline;
+}
+A:link{
+	COLOR: #333333;
+	text-decoration: underline;
+}
+A:hover {
+	COLOR: #9900FF;
+	text-decoration: underline;
+}
