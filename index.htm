@@ -1,18 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>Prof. Yu-Kun Lai</title>
 <META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
-<style type="text/css">
-  body {
-    background : url(imgs/homeback.jpg);
-    background-repeat : no-repeat;
-	background-attachment: fixed;
-	margin-left: 30px;
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-  }
-</style> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <LINK href="style.css" 
 type=text/css rel=stylesheet>
 <script type="text/javascript">
@@ -39,27 +30,26 @@ function togglebox(obj) {
 }
 </script>
 
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<table class="layout" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-	  <td width="10%" rowspan="9">
+	  <td class="gutter" width="10%" rowspan="9">
 	  </td>
 	  <td class="txt" width="90%">
 			<p class="heading">Prof. Yu-Kun Lai<a name="top"></a></p>
-<table width="100%" border="0" align="left" cellpadding="10" cellspacing="0">
+<table class="intro" width="100%" border="0" cellpadding="10" cellspacing="0">
 				  <tr class="txt">
 				  <td width="70%" valign="top"><p>Professor<br /> <a href="http://www.cs.cf.ac.uk/" target="_blank">School of Computer Science and Informatics<br>
 			        </a><a href="http://www.cardiff.ac.uk/" target="_blank">Cardiff University</a>, Wales, UK</p>
 				    <p class="subHeading">Contact Info</p>
                     <p class="txt"> <strong>Office:</strong> Abacws 2.09, Senghenydd Road, Cardiff CF24 4AG<br>
                       <strong>Tel: </strong>+44 (0) 29 20876353<br>
-                      <strong>Email: </strong>Yukun.Lai (at) cs.cardiff.ac.uk</p
-					  <p />
+                      <strong>Email: </strong>Yukun.Lai (at) cs.cardiff.ac.uk</p>
 					  <!--<p><strong>Open Office Hour: </strong>Thursday 2:00pm - 3:00pm (S/3.06) Weeks 1 - 10</p>-->
 					  
                     <p><a href="#publications">Publications</a>&nbsp;&nbsp;&nbsp;<a href="#teaching">Teaching</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#prizes">Prizes and Honours</a> &nbsp;<a href="#education">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cvlai.pdf" target="_blank">CV</a>&nbsp;</p></td>
-				  <td width=30% valign="top">
+				  <td class="intro-photo" width=30% valign="top">
 						
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 						<tr><td><img src="imgs/photo_corner_1.gif"></td><td background="imgs/photo_back_top.gif"></td><td><img src="imgs/photo_corner_2.gif"></td></tr>
 						<tr><td background="imgs/photo_back_left.gif"></td>
 						<!-- Place your image here: --><td><img src="images/photo.jpg" width="200" height="200"></td>
@@ -118,33 +108,33 @@ function togglebox(obj) {
 		<p>Some potential projects (but more are possible). </p>
 		<ul>
 		<li><a href="javascript:togglebox('project1');">3D Shape Analysis using Deep Learning</a> <!--[Funded PhD Studentship available: <a href="http://www.cardiff.ac.uk/study/postgraduate/research/programmes/project/3d-shape-analysis-using-deep-learning" target=_blank>Link</a>]-->
-		  <div id='project1' name='project1' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+		  <div id='project1' name='project1' class="infobox" style="display:none">
 		    <p><b>PROJECT TITLE:</b> <em>3D Shape Analysis using Deep Learning</em></p>
 		    <p><b>KEYWORDS:</b>3D geometry, machine learning, convolutional neural networks, shape</p>
 		    <p><b>DESCRIPTION:</b>3D shapes have proliferated in recent years, due to the availability of low-cost 3D cameras such as Kinect and Occipital Structure sensors, and their wide applicability in manufacturing design, entertainment industry, digital earth, 3D printing, and virtual reality etc. Online databases such as Trimble 3D Warehouse contain millions of 3D shapes. It is an increasing challenge to describe complicated 3D shapes effectively and analyse shapes at a high-level, e.g. to recognise objects in a scene or to find reusable parts for manufacturing design. Deep learning has shown to be an effective approach in image analysis, achieving state-of-the-art performance in many tasks. The aim of the project is to develop deep learning techniques for 3D shape analysis.</p>
 		</div></li>
 <!--		<li><a href="javascript:togglebox('project1b');">Incremental Non-Rigid 3D Reconstruction from Monocular Video</a> [Funded PhD Studentship available: <a href="https://www.findaphd.com/search/ProjectDetails.aspx?PJID=80401&LID=263" target=_blank>Link</a>]
-		  <div id='project1b' name='project1b' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+		  <div id='project1b' name='project1b' class="infobox" style="display:none">
 		    <p><b>PROJECT TITLE:</b> <em>Incremental Non-Rigid 3D Reconstruction from Monocular Video</em></p>
 		    <p><b>KEYWORDS:</b>reconstruction, 3D shape, video</p>
 		    <p><b>DESCRIPTION:</b>Non-rigid 3D reconstruction has attracted great interest over the last decades, but is typically restricted to using multiple or depth-sensing cameras, or dealing with specific shapes. Reconstruction from a single RGB-only camera (known as NRSfM: non-rigid structure from motion) is significantly harder. However, the ability to do it would open the door to easy, lightweight 3D capture, and enable reconstruction from existing videos. This project aims to advance the research in NRSfM by 1) introducing an incremental sequential reconstruction pipeline; and 2) incorporating SFS to improve the reconstruction of fine details. </p>
 		</div></li>
 -->		<li><a href="javascript:togglebox('project2');">3D Model Segmentation and Analysis</a>
-		  <div id='project2' name='project2' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+		  <div id='project2' name='project2' class="infobox" style="display:none">
 		    <p><b>PROJECT TITLE:</b> <em>3D Model Segmentation and Analysis</em></p>
 		    <p><b>KEYWORDS:</b> geometric models, shape analysis, segmentation, computer graphics, computer-aided design</p>
 		    <p><b>DESCRIPTION:</b> With the development of 3D acquisition techniques, 3D models are now widely available and used in various applications. The demand for model analysis and understanding is thus ever increasing. Model segmentation, i.e. decomposing a model into a set of disjoint, meaning pieces (e.g. limbs and torso of an animal) or ones which satisfy other desirable criteria (e.g. with consistent shape or texture constraint). Model segmentation is an important step towards model understanding and has broad applications, such as reverse engineering in computer-aided geometric design, as well as simplification, collision detection, morphing and animation in computer graphics. This project aims at investigating effective and efficient solutions to model segmentation, using various computer vision techniques.</p>
 		    </div></li>
 		 <li>
 		<a href="javascript:togglebox('project3');">Image and Video Vectorisation</a></li>
-		<div id='project3' name='project3' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+		<div id='project3' name='project3' class="infobox" style="display:none">
 		<p><b>PROJECT TITLE:</b>  <em>Image and Video Vectorisation</em></p>
 		<p><b>KEYWORDS:</b> image and video processing, computer graphics, image compression, image editing</p>
 		<p><b>DESCRIPTION</b>: Vector graphics are well-known to offer various advantages over raster graphics. Many images, ranging from artistic work to captured photos, have relatively uniform or smoothly changing colours, and representing them using vector graphics can lead to significant savings of storage and network bandwidth. They are also resolution-independent and easy to edit, making them particularly suitable for animation transmitted over the Internet, such as SVG and Shockwave Flash. Manual creation of vectorised graphics takes a huge amount of time. The aim of this project is to investigate robust and efficient solutions to computer aided generation of vectorised images and videos.</p>
 		</div></li>
 		<li>
 		<a href="javascript:togglebox('project4');">Modelling and Transferring Geometric Details over 3D Shapes</a>
-		<div id='project4' name='project4' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+		<div id='project4' name='project4' class="infobox" style="display:none">
 		<p><b>PROJECT TITLE:</b> <em>Modelling and Transferring Geometric Details over 3D Shapes</em></p>
 		<p><b>KEYWORDS:</b> geometric models, shape analysis, computer graphics, computer vision</p>
 		<p><b>DESCRIPTION:</b> The recent development of 3D acquisition techniques allows complicated geometric models with fine details to be digitally captured. In many cases, such details reveal the essential geometric textures or the particular artistic styles (e.g. sculpture, woodcut etc.) of the objects. Modelling geometric textures or styles from one object makes it possible to reproduce similar textures or styles over new models. This not only brings richness to new objects, but also allows newly created objects to be stylised as exemplars. In this project, shape analysis and computer vision techniques will be utilised to appropriately analyse and model the geometric details and further algorithms to transfer such models will be investigated.</p>
@@ -163,15 +153,14 @@ function togglebox(obj) {
 		      <li>CMT307/CMT 507 Applied Machine Learning (shared with Dr. Y. Li and Dr. Y. Qin)</li>
 			  <li>CMT316 Applications of Machine Learning (shared with Dr. Y. Li and Dr. Y. Qin)</li>
 		    </ul>
-<div align="center" class="subHeading">
-  <div align="left"><a name="publications"></a>Selected Publications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="heading"><a href="#pub2025">2025</a>&nbsp;<span class="heading"></a>&nbsp;<a href="#pub2024">2024</a>&nbsp;<span class="heading"></a>&nbsp;<a href="#pub2023">2023</a>&nbsp;<span class="heading"></a>&nbsp;<a href="#pub2022">2022</a>&nbsp;<span class="heading"></a>&nbsp;<a href="#pub2021">2021</a>&nbsp;<span class="heading"><a href="#pub2020">2020</a>&nbsp;<span class="heading"><a href="#pub2019">2019</a></span>&nbsp;<span class="heading"><a href="#pub2018">2018</a></span>&nbsp;<span class="heading"><a href="#pub2017">2017</a></span>&nbsp;<span class="heading"><a href="#pub2016">2016</a></span>&nbsp;<span class="heading"><a href="#pub2015">2015</a></span>&nbsp;<span class="heading"><a href="#pub2014">2014</a></span>&nbsp;<span class="heading"><a href="#pub2013">2013</a></span>&nbsp;<span class="txt"><span class="heading"><a href="#pub2012">2012</a>&nbsp;<a href="#pub2011">2011</a>&nbsp;<a href="#pub2010">2010</a>&nbsp;<a href="#pub2009">2009</a> <a href="#pub2008">2008</a> <a href="#pub2007">2007</a> <a href="#pub2006">2006</a> <a href="#pub2005">2005</a> <a href="#top">Top</a></span></div>
+<div class="subHeading pubnav">
+  <a name="publications"></a>Selected Publications<span class="years"><a href="#pub2026">2026</a> <a href="#pub2025">2025</a> <a href="#pub2024">2024</a> <a href="#pub2023">2023</a> <a href="#pub2022">2022</a> <a href="#pub2021">2021</a> <a href="#pub2020">2020</a> <a href="#pub2019">2019</a> <a href="#pub2018">2018</a> <a href="#pub2017">2017</a> <a href="#pub2016">2016</a> <a href="#pub2015">2015</a> <a href="#pub2014">2014</a> <a href="#pub2013">2013</a> <a href="#pub2012">2012</a> <a href="#pub2011">2011</a> <a href="#pub2010">2010</a> <a href="#pub2009">2009</a> <a href="#pub2008">2008</a> <a href="#pub2007">2007</a> <a href="#pub2006">2006</a> <a href="#pub2005">2005</a> <a href="#top">Top</a></span>
 		    </div>
- 			<a name="pub2025" id="A1"></a>
-			<p class="subHeading">2025</p><hr />
-	  
+ 			<a name="pub2026" id="pub2026"></a>
+			<p class="subHeading">2026</p><hr />
 <table border="0">
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -180,7 +169,7 @@ function togglebox(obj) {
 			           <tr>
 			             <td background="imgs/photo_back_left.gif"></td>
 			             <!-- Place your image here: -->
-			             <td>	<img src="images/BiBBDM_TPAMI.png" width=300/></td>
+			             <td>	<img src="images/DDBot_TRO.png" width=300/></td>
 			             <td background="imgs/photo_back_right.gif"></td>
 		               </tr>
 			           <tr>
@@ -189,15 +178,12 @@ function togglebox(obj) {
 			             <td><img src="imgs/photo_corner_3.gif"></td>
 		               </tr>
 		             </table>
-			</td><td>&nbsp;</td><td><strong>BiBBDM: Bidirectional Image Translation with Brownian Bridge Diffusion Models</strong><br>
-Kaitao Xue, Bo Li, Ziyi Liu, Zhifen He, Bin Liu, Congxuan Zhang, Yu-Kun Lai<br>
-<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, to appear.<br>
-<a href="https://orca.cardiff.ac.uk/id/eprint/180713/1/BiBBDM-TPAMI.pdf">[paper]</a>&nbsp;<a href="https://github.com/xuekt98/BiBBDM" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TPAMI.2025.3597667" target="_blank">[doi]</a></td></tr>
-</td></tr>	  
-
-	  
+			</td><td>&nbsp;</td><td><strong>DDBot: Differentiable Physics-based Digging Robot for Unknown Granular Materials</strong><br>
+Xintong Yang, Minglun Wei, Yu-Kun Lai, Ze Ji<br>
+<em>IEEE Transactions on Robotics</em>, vol. 42, pp. 152-169, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/182975/1/2024___DDBot__Differentiable_Physic_based_Digging_Robot_for_Unknown_Granular_Materials.pdf">[paper]</a>&nbsp;<a href="https://github.com/IanYangChina/DDBot-IEEE-TRO-2025" target="_blank">[code]</a>&nbsp;<a href="https://www.youtube.com/watch?v=eoNx5V688H0" target="_blank">[video]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TRO.2025.3636815" target="_blank">[doi]</a></td></tr>
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -223,7 +209,207 @@ Hao Wen, Hongbo Kang, Jian Ma, Jing Huang, Yuanwang Yang, Haozhe Lin, Yu-Kun Lai
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/PIDG_TNNLS.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>A Physics-Informed Demonstration-Guided Learning Framework for Granular Material Manipulation</strong><br>
+Minglun Wei, Xintong Yang, Yu-Kun Lai, Seyed Amir Tafrishi, Ze Ji<br>
+<em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 37(4), pp. 1590-1604, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/182077/1/AutomaChef_Final_Edition_arxiv.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TNNLS.2025.3622482" target="_blank">[doi]</a></td></tr>
+
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/SuperSVGpp_IJCV2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>SuperSVG++: Semantic-Driven Layer-Wise Scalable Vector Graphics Synthesis with Semantic Layer Decomposition</strong><br>
+Teng Hu, Ran Yi, Hongrui Huang, Lizhuang Ma, Paul L. Rosin, Yu-Kun Lai<br>
+<em>International Journal of Computer Vision</em>, vol. 134(11), 497, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/190597/1/SuperSVG%2B%2B-IJCV-postprint.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1007/s11263-026-03099-1" target="_blank">[doi]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/FLASHand_SIG2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>FLASHand: Feed-forward reLightable and Animatable Single-view Hand Reconstruction</strong><br>
+Ling-Xiao Zhang, Lin Gao, Wei-Hong He, Yu-Xuan Yang, Yunbing Xing, Yu-Kun Lai, Yiqiang Chen<br>
+<em>ACM SIGGRAPH Conference Proceedings</em>, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/188380/1/3799902.3811039.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/FLASHand" target="_blank">[code]</a>&nbsp;<a href="https://doi.org/10.1145/3799902.3811039" target="_blank">[doi]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/CGFloor_CVPR2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>CG-Floor: Centroid-Guided Diffusion for Large-Scale Floorplan Generation</strong><br>
+Hongjin Lian, Jian Ma, Hongjie Chen, Jia Li, Ruizhen Hu, Yu-Kun Lai, Kun Li<br>
+<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/186972/1/CG_Floor_CVPR.pdf">[paper]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Lian_CG-Floor_Centroid-Guided_Diffusion_for_Large-Scale_Floorplan_Generation_CVPR_2026_paper.pdf" target="_blank">[official version]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/Diagram2Structure_CVPR2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>Diagram2Structure: Unlocking LLMs' Diagram Comprehension through DiagramDiff, a Framework for Structuring Offline Diagrams</strong><br>
+Haoxiang Hu, Yaokun Li, Zeyuan Huang, Cangjun Gao, Qiang He, Qingkun Li, Xiaoming Deng, Cuixia Ma, Yu-Kun Lai, Yong-Jin Liu, Hongan Wang<br>
+<em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/186973/2/Diagram2StructureCVPR2026.pdf">[paper]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Hu_Diagram2Structure_Unlocking_LLMs_Diagram_Comprehension_through_DiagramDiff_a_Framework_for_CVPR_2026_paper.pdf" target="_blank">[official version]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/GeoDecoupling_ICML2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>Geometric Decoupling: Diagnosing the Structural Instability of Latent</strong><br>
+Yuanbang Liang, Zhengwen Chen, Yu-Kun Lai<br>
+<em>International Conference on Machine Learning (ICML)</em>, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/187865/1/GenLocalManifold_ICML2026.pdf">[paper]</a>&nbsp;<a href="https://github.com/Byronliang8/Diffusion-Geometry" target="_blank">[code]</a>&nbsp;<a href="https://proceedings.mlr.press/v306/liang26d.html" target="_blank">[official version]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/Crowd4D_ICML2026.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>Crowd4D: Scene-Aware Monocular 4D Crowd Reconstruction</strong><br>
+Hongbo Kang, Tianyi Zhou, Qingyang Yang, Hongwei Wen, Jing Huang, Yu-Kun Lai, Kun Li<br>
+<em>International Conference on Machine Learning (ICML)</em>, 2026.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/187862/2/Crowd4D_ICML26.pdf">[paper]</a>&nbsp;<a href="https://proceedings.mlr.press/v306/kang26s.html" target="_blank">[official version]</a></td></tr>
+
+</table>
+ 			<a name="pub2025" id="A1"></a>
+			<p class="subHeading">2025</p><hr />
+	  
+<table border="0">
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/BiBBDM_TPAMI.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>BiBBDM: Bidirectional Image Translation with Brownian Bridge Diffusion Models</strong><br>
+Kaitao Xue, Bo Li, Ziyi Liu, Zhifen He, Bin Liu, Congxuan Zhang, Yu-Kun Lai<br>
+<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 47(11), pp. 10546-10559, 2025.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/180713/1/BiBBDM-TPAMI.pdf">[paper]</a>&nbsp;<a href="https://github.com/xuekt98/BiBBDM" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TPAMI.2025.3597667" target="_blank">[doi]</a></td></tr>
+</td></tr>	  
+
+	  
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -249,7 +435,7 @@ Tong Wu, Jia-Mu Sun, Yu-Kun Lai, Yuewen Ma, Leif Kobbelt, Lin Gao<br>
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -276,7 +462,7 @@ Tong Wu, Jia-Mu Sun, Yu-Kun Lai, Lin Gao<br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -300,10 +486,158 @@ elastoplastic materials
 </strong><br>
 Xintong Yang, Ze J, Yu-Kun Lai<br>
 <em>International Journal of
-Robotics Research</em>, to appear.<br>
+Robotics Research</em>, vol. 44(13), pp. 2126-2155, 2025.<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/175701/1/VD-NeRF_TPAMI.pdf">[paper]</a>&nbsp;<!--<a href="https://github.com/xuekt98/BiBBDM" target="_blank">[code]</a>&nbsp;--><a href="http://dx.doi.org/10.1177/02783649251334661" target="_blank">[doi]</a></td></tr>
 	</td></tr>
 
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/3DTalkingFace_TVCG.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>Pose-Aware 3D Talking Face Synthesis using Geometry-guided Audio-Vertices Attention</strong><br>
+Bo Li, Xiaolin Wei, Bin Liu, Zhifen He, Junjie Cao, Yu-Kun Lai<br>
+<em>IEEE Transactions on Visualization and Computer Graphics</em>, vol. 31(3), pp. 1758-1771, 2025.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/167426/1/PoseAware3DFacialAnimationSynthesisTVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/sharlingw/PATFS">[code]</a>&nbsp;<a href="https://doi.org/10.1109/TVCG.2024.3371064" target="_blank">[doi]</a></td></tr>
+</td></tr>	  
+
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/ObjGoalNavTASE.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>A Survey of Object Goal Navigation</strong><br>
+Jingwen Sun, Jing Wu, Ze Ji, Yu-Kun Lai<br>
+<em>IEEE Transactions on Automation Science and Engineering</em>, vol. 22, pp. 2292-2308, 2025.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TASE.2024.3378010" target="_blank">[doi]</a></td></tr>
+</td></tr>	  
+
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/SingleImageHuman_SIGA2025.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>Single-Image 3D Human Reconstruction with 3D-Aware Diffusion Priors and Facial Enhancement</strong><br>
+Jie Yang, Bo-Tao Zhang, Feng-Lin Liu, Hongbo Fu, Yu-Kun Lai, Lin Gao<br>
+<em>ACM SIGGRAPH Asia Conference Proceedings</em>, 2025.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/183216/1/3757377.3763839.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1145/3757377.3763839" target="_blank">[doi]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/LGANet_ICCV2025.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>LGA-Net: Learning Local and Global Affinities for Sparse Scribble Based Image Colorization</strong><br>
+Hongjin Lyu, Bo Li, Paul L. Rosin, Yu-Kun Lai<br>
+<em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2025.<br>
+<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Lyu_LGA-Net_Learning_Local_and_Global_Affinities_for_Sparse_Scribble_based_ICCV_2025_paper.pdf">[paper]</a>&nbsp;<!--<a href="https://github.com/HONGJINLYUCS/LGA-Net-ICCV-2025" target="_blank">[code]</a>&nbsp;--><a href="https://doi.org/10.1109/ICCV51701.2025.00763" target="_blank">[doi]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/RESCUE_ICCV2025.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>RESCUE: Crowd Evacuation Simulation via Controlling SDM-United Characters</strong><br>
+Xiaolin Liu, Tianyi Zhou, Hongbo Kang, Jian Ma, Ziwen Wang, Jing Huang, Wenguo Weng, Yu-Kun Lai, Kun Li<br>
+<em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2025.<br>
+<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Liu_RESCUE_Crowd_Evacuation_Simulation_via_Controlling_SDM-United_Characters_ICCV_2025_paper.pdf">[paper]</a>&nbsp;<a href="http://cic.tju.edu.cn/faculty/likun/projects/RESCUE" target="_blank">[project]</a>&nbsp;<a href="https://doi.org/10.1109/ICCV51701.2025.02314" target="_blank">[doi]</a></td></tr>
+
+<tr><td width=300>
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
+			           <tr>
+			             <td><img src="imgs/photo_corner_1.gif"></td>
+			             <td background="imgs/photo_back_top.gif"></td>
+			             <td><img src="imgs/photo_corner_2.gif"></td>
+		               </tr>
+			           <tr>
+			             <td background="imgs/photo_back_left.gif"></td>
+			             <!-- Place your image here: -->
+			             <td>	<img src="images/CCDbPlus_MM2025.png" width=300/></td>
+			             <td background="imgs/photo_back_right.gif"></td>
+		               </tr>
+			           <tr>
+			             <td><img src="imgs/photo_corner_4.gif"></td>
+			             <td background="imgs/photo_back_bottom.gif"></td>
+			             <td><img src="imgs/photo_corner_3.gif"></td>
+		               </tr>
+		             </table>
+			</td><td>&nbsp;</td><td><strong>CCDb+: Enhanced Annotations and Multi-Modal Benchmark for Natural Dyadic Conversations</strong><br>
+Yang Deng, Yu-Kun Lai, Paul L. Rosin<br>
+<em>ACM Multimedia</em>, 2025.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/181328/1/CCDb_ACM_MM2025.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1145/3746027.3755333" target="_blank">[doi]</a></td></tr>
 
 </table>		  
  			<a name="pub2024" id="A1"></a>
@@ -311,7 +645,7 @@ Robotics Research</em>, to appear.<br>
 <table border="0">
 	  
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -331,12 +665,12 @@ Robotics Research</em>, to appear.<br>
 		             </table>
 			</td><td>&nbsp;</td><td><strong>Real-time Large-scale Deformation of Gaussian Splatting</strong><br>
 Lin Gao, Jie Yang, Bo-Tao Zhang, Jia-Mu Sun, Yu-Jie Yuan, Hongbo Fu, Yu-Kun Lai<br>
-<em>ACM Transactions on Graphics</em>, to appear.<br>
-<a href="https://orca.cardiff.ac.uk/id/eprint/172589/1/EditableGS_SIGA2024.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/GaussianMesh" target="_blank">[code]</a>&nbsp;<!--<a href="http://dx.doi.org/10.1109/TPAMI.2020.2987931" target="_blank">[doi]</a>--></td></tr>
+<em>ACM Transactions on Graphics</em>, vol. 43(6), pp. 1-17, 2024.<br>
+<a href="https://orca.cardiff.ac.uk/id/eprint/172589/1/EditableGS_SIGA2024.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/GaussianMesh" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1145/3687756" target="_blank">[doi]</a></td></tr>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -362,7 +696,7 @@ Feng-Lin Liu, Hongbo Fu, Yu-Kun Lai, Lin Gao<br>
 
 			  
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -382,13 +716,13 @@ Feng-Lin Liu, Hongbo Fu, Yu-Kun Lai, Lin Gao<br>
 		             </table>
 			</td><td>&nbsp;</td><td><strong>H<font size="-1">AISOR</font>: Human-aware Indoor Scene Optimization via Deep Reinforcement Learning</strong><br>
 Feng-Lin Liu, Hongbo Fu, Yu-Kun Lai, Lin Gao<br>
-<em>ACM Transactions on Graphics</em>, vol. 32(2), pp. 15:1-17, 2024.<br>
+<em>ACM Transactions on Graphics</em>, vol. 43(2), pp. 15:1-17, 2024.<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/165315/1/HAISOR_TOG.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1145/3632947" target="_blank">[doi]</a></td></tr>
 </td></tr>	  
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -413,7 +747,7 @@ Yi-Hua Huang, Yan-Pei Cao, Yu-Kun Lai, Ying Shan, Lin Gao<br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -439,33 +773,7 @@ Tai-Jiang Mu, Ming-Yuan Shen, Yu-Kun Lai, Shi-Min Hu<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
-			           <tr>
-			             <td><img src="imgs/photo_corner_1.gif"></td>
-			             <td background="imgs/photo_back_top.gif"></td>
-			             <td><img src="imgs/photo_corner_2.gif"></td>
-		               </tr>
-			           <tr>
-			             <td background="imgs/photo_back_left.gif"></td>
-			             <!-- Place your image here: -->
-			             <td>	<img src="images/3DTalkingFace_TVCG.png" width=300/></td>
-			             <td background="imgs/photo_back_right.gif"></td>
-		               </tr>
-			           <tr>
-			             <td><img src="imgs/photo_corner_4.gif"></td>
-			             <td background="imgs/photo_back_bottom.gif"></td>
-			             <td><img src="imgs/photo_corner_3.gif"></td>
-		               </tr>
-		             </table>
-			</td><td>&nbsp;</td><td><strong>Pose-Aware 3D Talking Face Synthesis using Geometry-guided Audio-Vertices Attention</strong><br>
-Bo Li, Xiaolin Wei, Bin Liu, Zhifen He, Junjie Cao, Yu-Kun Lai<br>
-<em>IEEE Transactions on Visualization and Computer Graphics</em>, to appear.<br>
-<a href="https://orca.cardiff.ac.uk/id/eprint/167426/1/PoseAware3DFacialAnimationSynthesisTVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/sharlingw/PATFS">[code]</a>&nbsp;<a href="https://doi.org/10.1109/TVCG.2024.3371064" target="_blank">[doi]</a></td></tr>
-</td></tr>	  
-
-
-<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -492,7 +800,7 @@ Cuixia Ma, Sheng-feng Qin, Yong-Jin Liu, Hongan Wang<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -518,33 +826,7 @@ Yingjie Zhai, Guoli Jia, Yu-Kun Lai, Jing Zhang, Jufeng Yang, Dacheng Tao<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
-			           <tr>
-			             <td><img src="imgs/photo_corner_1.gif"></td>
-			             <td background="imgs/photo_back_top.gif"></td>
-			             <td><img src="imgs/photo_corner_2.gif"></td>
-		               </tr>
-			           <tr>
-			             <td background="imgs/photo_back_left.gif"></td>
-			             <!-- Place your image here: -->
-			             <td>	<img src="images/ObjGoalNavTASE.png" width=300/></td>
-			             <td background="imgs/photo_back_right.gif"></td>
-		               </tr>
-			           <tr>
-			             <td><img src="imgs/photo_corner_4.gif"></td>
-			             <td background="imgs/photo_back_bottom.gif"></td>
-			             <td><img src="imgs/photo_corner_3.gif"></td>
-		               </tr>
-		             </table>
-			</td><td>&nbsp;</td><td><strong>A Survey of Object Goal Navigation</strong><br>
-Jingwen Sun, Jing Wu, Ze Ji, Yu-Kun Lai<br>
-<em>IEEE Transactions on Automation Sciences and Engineering</em>, to appear.<br>
-<a href="https://orca.cardiff.ac.uk/id/eprint/167432/1/ObjectGoalNavigationSurveyTASE.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TASE.2024.3378010" target="_blank">[doi]</a></td></tr>
-</td></tr>	  
-
-
-<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -570,7 +852,7 @@ Xiongzheng Li, Jinsong Zhang, Yu-Kun Lai, Jingyu Yang, Kun Li<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -590,14 +872,14 @@ Xiongzheng Li, Jinsong Zhang, Yu-Kun Lai, Jingyu Yang, Kun Li<br>
 		             </table>
 			</td><td>&nbsp;</td><td><strong>Towards Grouping in Large Scenes with Occlusion-aware Spatio-temporal Transformers</strong><br>
 Jinsong Zhang, Lingfeng Gu, Yu-Kun Lai, Xueyang Wang, Kun Li<br>
-	<em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 24(5), pp. 3919-3929, 2024.<br>
+	<em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 34(5), pp. 3919-3929, 2024.<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/167434/1/GroupTransformerTCSVT.pdf">[paper]</a>&nbsp;<a href="https://github.com/Zhangjinso/GroupTrans">[code]</a>&nbsp;<a href="https://doi.org/10.1109/TCSVT.2023.3324868" target="_blank">[doi]</a></td></tr>
 </td></tr>	  
 
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -623,7 +905,7 @@ Yi-Fan Li, Hong-Bing Ji, Wen-Bo Zhang, Yu-Kun Lai<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -651,7 +933,7 @@ Bo Li, Xiao Lin, Bin Liu, Zhi-Fen He, Yu-Kun Lai<br>
 <!---->
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -676,7 +958,7 @@ Peter Herbert, Jing Wu, Ze Ji, Yu-Kun Lai<br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -701,7 +983,7 @@ Haotian Yang, Mingwu Zheng, Chongyang Ma, Yu-Kun Lai, Penfei Wan, Haibin Wang<br
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -727,7 +1009,7 @@ Ziqi Cai, Kaiwen Jiang, Shu-Yu Chen, Yu-Kun Lai, Hongbo Fu, Boxin Shi, Lin Gao<b
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -754,7 +1036,7 @@ Teng Hu, Ran Yi, Baihong Qian, Jiangning Zhang, Paul L. Rosin, Yu-Kun Lai<br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -781,7 +1063,7 @@ Yuanbang Liang, Jing Wu, Yu-Kun Lai, Yipeng Qin<br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -808,7 +1090,7 @@ Tian-Xing Xu, Wenbo Hu, Yu-Kun Lai, Ying Shan, Song-Hai Zhang <br>
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -835,7 +1117,7 @@ Shao-Kui Zhang, Junkai Huang, Liang Yue, Jia-Tong Zhang, Jia-Hong Liu, Yu-Kun La
 </td></tr>	  
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -870,7 +1152,7 @@ Ran Yi, Haokun Zhu, Teng Hu, Yu-Kun Lai, Paul L. Rosin<br>
 	
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -896,7 +1178,7 @@ Lin Gao, Feng-Lin Liu, Shu-Yu Chen, Kaiwen Jiang, Chunpeng Li, Yu-Kun Lai, Hongb
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -921,7 +1203,7 @@ Jie Yang, Kaichun Mo, Yu-Kun Lai, Leonidas J. Guibas, Lin Gao<br>
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -946,7 +1228,7 @@ Yu-Jie Yuan, Yang-Tian Sun, Yu-Kun Lai, Yuewen Ma, Rongfei Jia, Leif Kobbelt, Li
 	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -971,7 +1253,7 @@ Tong Wu, Lin Gao, Ling-Xiao Zhang, Yu-Kun Lai, Hao Zhang.<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -996,7 +1278,7 @@ Yu-Jie Yuan, Yu-Kun Lai, Yi-Hua Huang, Leif Kobbelt, Lin Gao<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1021,7 +1303,7 @@ Lin Gao, Jia-Mu Sun, Kaichun Mo, Yu-Kun Lai, Leonidas J. Guibas, Jie Yang<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1047,7 +1329,7 @@ Yang-Tian Sun, Qian-Cheng Fu, Yue-Ren Jiang, Zitao Liu, Yu-Kun Lai, Hongbo Fu, L
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1077,7 +1359,7 @@ Yang-Tian Sun, Hao-Zhi Huang, Xuan Wang, Yu-Kun Lai, Wei Liu, Lin Gao<br>
 	
 	
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1104,7 +1386,7 @@ Ran Yi, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 </td></tr>			
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1128,7 +1410,7 @@ Jie Yang, Lin Gao, Qingyang Tan, Yi-Hua Huang, Shihong Xia, Yu-Kun Lai<br>
 <a href="https://orca.cardiff.ac.uk/144060/1/MSDeformationAnalysisTVCG.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2021.3112526" target="_blank">[doi]</a></td></tr>
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1153,7 +1435,7 @@ Zipeng Ye, Mengfei Xia, Yanan Sun, Ran Yi, Minjing Yu, Juyong Zhang, Yu-Kun Lai,
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1177,7 +1459,7 @@ Xiongzheng Li, Jing Huang, Jinsong Zhang, Xiaokun Sun, Haibiao Xuan, Yu-Kun Lai,
 <a href="https://orca.cardiff.ac.uk/id/eprint/153316/1/Learning_to_Infer_Inner_Body_TVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/xz-pisces/Inner-body" target=_blank>[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2022.3202240" target="_blank">[doi]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1202,7 +1484,7 @@ Min Shi, Jia-Qi Zhang, Shu-Yu Chen, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang<br>
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1226,7 +1508,7 @@ Yi-Ling Qiao, Lin Gao, Shu-Zhi Liu, Ligang Liu, Yu-Kun Lai, Xilin Chen<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/149610/1/LearningIntrinsicReflectionalSymmetryTVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/YilingQiao/intrinsicSym" target=_blank>[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2022.3172361" target="_blank">[doi]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1251,7 +1533,7 @@ Ran Zuo, Xiaoming Deng, Keqi Chen, Zhengming Zhang, Yu-Kun Lai, Fang Liu, Cuixia
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1275,7 +1557,7 @@ Xiaoyan Hu, Ling-Xiao Zhang, Lin Gao, Weiwei Dai, Xiaoguang Han, Yu-Kun Lai, Yiq
 <a href="https://orca.cardiff.ac.uk/id/eprint/156941/1/GLIM_Net_TMI.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TMI.2023.3243692" target="_blank">[doi]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1301,7 +1583,7 @@ Shu-Yu Chen, Yu-Kun Lai, Shihong Xia, Paul L. Rosin, Lin Gao<br>
 	
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1326,7 +1608,7 @@ Zipeng Ye, Mengfei Xia, Ran Yi, Juyong Zhang, Yu-Kun Lai, Xuwei Huang, Guoxin Zh
 	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1351,7 +1633,7 @@ Shu-Yu Chen, Yu-Kun Lai, Shihong Xia, Paul L. Rosin, Lin Gao<br>
 	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1375,7 +1657,7 @@ Haotian Yang, Mingwu Zheng, Wanquan Feng, Haibin Huang, Yu-Kun Lai, Pengfei Wan<
 <a href="https://orca.cardiff.ac.uk/id/eprint/163783/1/TRAvatar_SIGA2023.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1145/3610548.3618138" target="_blank">[doi]</a></td></tr>	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1401,7 +1683,7 @@ Jia-Mu Sun, Tong Wu, Yong-Liang Yang, Yu-Kun Lai, Lin Gao<br>
 
 	
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1426,7 +1708,7 @@ Tong Wu, Jia-Mu Sun, Yu-Kun Lai, Lin Gao<br>
 	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1451,7 +1733,7 @@ Chenbo Jiang, Jie Yang, Shwai He, Yu-Kun Lai, Lin Gao<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/162710/1/NeuralSlice_ICML2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/NEURALSLICE" target=_blank>[code]</a>&nbsp;<a href="https://proceedings.mlr.press/v202/jiang23j/jiang23j.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1475,7 +1757,7 @@ Ren-Wu Li, Ling-Xiao Zhang, Chunpeng Li, Yu-Kun Lai, Lin Gao<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/162703/1/E3Sym_ICCV2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/renwuli/e3sym" target=_blank>[code]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_E3Sym_Leveraging_E3_Invariance_for_Unsupervised_3D_Planar_Reflective_Symmetry_ICCV_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1501,7 +1783,7 @@ Tian-Xing Xu, Yuan-Chen Guo, Yu-Kun Lai, Song-Hai Zhang<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/162705/1/MBPTrack_ICCV2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/slothfulxtx/MBPTrack3D" target=_blank>[code]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_MBPTrack_Improving_3D_Point_Cloud_Tracking_with_Memory_Networks_and_ICCV_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 	<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1525,7 +1807,7 @@ Shuang Song, Yuanbang Liang, Jing Wu, Yu-Kun Lai, Yipeng Qin<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/161951/1/09471.pdf">[paper]</a>&nbsp;<a href="https://github.com/songc42/Feature-proliferation" target=_blank>[code]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Song_Feature_Proliferation_--_the_Cancer_in_StyleGAN_and_its_Treatments_ICCV_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 	<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1550,7 +1832,7 @@ Hao Wen, Jing Huang, Huili Cui, Haozhe Lin, Yu-Kun Lai, Lu Fang, Kun Li<br>
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1574,7 +1856,7 @@ Tian-Xing Xu, Yuan-Chen Guo, Yu-Kun Lai, Song-Hai Zhang<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/158971/1/CXTrack_CVPR2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/slothfulxtx/cxtrack3d" target=_blank>[code]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Xu_CXTrack_Improving_3D_Point_Cloud_Tracking_With_Contextual_Information_CVPR_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1598,7 +1880,7 @@ Bo Li, Kaitao Xue, Bin Liu, Yu-Kun Lai<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/158968/1/BBDM_CVPR2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/xuekt98/BBDM" target=_blank>[code]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_BBDM_Image-to-Image_Translation_With_Brownian_Bridge_Diffusion_Models_CVPR_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1622,7 +1904,7 @@ Ran Yi, Haoyuan Tian, Zhihao Gu, Yu-Kun Lai, Paul L. Rosin<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/158972/1/AIAA_CVPR2023.pdf">[paper]</a>&nbsp;<a href="https://github.com/Dreemurr-T/BAID" target=_blank>[code &amp; data]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yi_Towards_Artistic_Image_Aesthetics_Assessment_A_Large-Scale_Dataset_and_a_CVPR_2023_paper.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1655,7 +1937,7 @@ Xiaokun Sun, Qiao Feng, Xiongzheng Li, Jinsong Zhang, Yu-Kun Lai, Jingyu Yang, K
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1679,7 +1961,7 @@ Feng-Lin Liu, Shu-Yu Chen, Yu-Kun Lai, Chunpeng Li, Yue-Ren Jiang, Hongbo Fu, Li
 <a href="https://orca.cardiff.ac.uk/id/eprint/150487/8/3528223.3530056.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/DeepFaceVideoEditing" target="_blank">[code]</a>&nbsp;<a href="https://doi.org/10.1145/3528223.3530056" target="_blank">[doi]</a></td></tr>					
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1703,7 +1985,7 @@ Qingyang Tan, Ling-Xiao Zhang, Jie Yang, Yu-Kun Lai, Lin Gao<br>
 <a href="https://orca.cardiff.ac.uk/141999/1/DeformationComponentAnalysis_TPAMI.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TPAMI.2021.3085887" target="_blank">[doi]</a></td></tr>		
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1727,7 +2009,7 @@ Jingying Liu, Binyuan Hui, Kun Li, Yunke Liu, Yu-Kun Lai, Yuxiang Zhang, Yebin L
 <a href="https://orca.cardiff.ac.uk/143861/1/GDPnet-TVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/huybery/GDPnet" target=_blank>[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2021.3107669" target="_blank">[doi]</a></td></tr>					
 			
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1752,7 +2034,7 @@ Yu He, Ying-Tian Liu, Yi-Han Jin, Song-Hai Zhang, Yu-Kun Lai, Shi-Min Hu<br>
 			
 			
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1777,7 +2059,7 @@ Yezhi Shu, Ran Yi, Mengfei Xia, Zipeng Ye, Wang Zhao, Yang Chen, Yu-Kun Lai, Yon
 			
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1802,7 +2084,7 @@ Yi-Ling Qiao, Yu-Kun Lai, Hongbo Fu, Lin Gao<br>
 			
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1827,7 +2109,7 @@ Xintong Yang, Ze Ji, Jing Wu, Yu-Kun Lai, Changyun Wei, Guoliang Liu, Rossitza S
 
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1852,7 +2134,7 @@ Xiaobing Du, Cuixia Ma, Guanhua Zhang, Jinyao Li, Yu-Kun Lai, Guozhen Zhao, Xiao
 			
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1876,7 +2158,7 @@ Yi-Ling Qiao, Lin Gao, Jie Yang, Paul L. Rosin, Yu-Kun Lai, Xilin Chen<br>
 <a href="https://orca.cardiff.ac.uk/134152/1/MeshLaplacianNet-TVCG.pdf">[paper]</a>&nbsp;<a href="https://github.com/YilingQiao/lapcluster" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2020.3014449" target="_blank">[doi]</a></td></tr>
 			
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1900,7 +2182,7 @@ Kevin Maher, Zeyuan Huang, Jiancheng Song, Xiaoming Deng, Yu-Kun Lai, Cuixia Ma,
 <a href="https://orca.cardiff.ac.uk/143850/1/E-ffective-VIS2021.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2021.3114789" target="_blank">[doi]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1924,7 +2206,7 @@ Fang Liu, Xiaoming Deng, Changqing Zou, Yu-Kun Lai, Keqi Chen, Ran Zuo, Cuixia M
 <a href="https://orca.cardiff.ac.uk/id/eprint/150486/1/TIP_SceneSketcher-v2.pdf">[paper]</a>&nbsp;<a href="https://github.com/shinyfang/SceneSketcher" target="_blank">[code &amp; data]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TIP.2022.3175403" target="_blank">[doi]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1949,7 +2231,7 @@ Ran Yi, Zipeng Ye, Yezhi Shu, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1974,7 +2256,7 @@ Qian Feng, Yebin Liu, Yu-Kun Lai, Jingyu Yang, Kun Li<br>
 <a href="https://orca.cardiff.ac.uk/id/eprint/153440/1/fof_NeurIPS2022.pdf">[paper]</a>&nbsp;<a href="https://github.com/fengq1a0/FOF" target="_blank">[code]</a>&nbsp;<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/30d046e94d7b8037d6ef27c4357a8dd4-Paper-Conference.pdf" target="_blank">[official version]</a></td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -1999,7 +2281,7 @@ Yi-Hua Huang, Yue He, Yu-Jie Yuan, Yu-Kun Lai, Lin Gao<br>
 				
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2024,7 +2306,7 @@ Yu-Jie Yuan, Yang-Tian Sun, Yu-Kun Lai, Yuewen Ma, Rongfei Jia, Lin Gao<br>
 
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2049,7 +2331,7 @@ Hao Zhao, Jinsong Zhang, Yu-Kun Lai, Zerong Zheng, Yingdi Xie, Yebin Liu, Kun Li
 				
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2089,7 +2371,7 @@ Yuanbang Liang, Jing Wu, Yu-Kun Lai, Yipeng Qin<br>
 			<table border="0">
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2114,7 +2396,7 @@ Shu-Yu Chen, Feng-Lin Liu, Yu-Kun Lai, Paul L. Rosin, Chunpeng Li, Hongbo Fu, Li
 
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2139,7 +2421,7 @@ Zishun Liu, Xingjian Han, Yuchen Zhang, Xiangjia Chen, Yu-Kun Lai, Eugeni L. Dou
 
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2163,7 +2445,7 @@ Lin Gao, Tong Wu, Yu-Jie Yuan, Ming-Xian Lin, Yu-Kun Lai, Hao Zhang<br>
 <a href="https://orca.cardiff.ac.uk/144070/1/TM-NET_TOG2021.pdf">[paper]</a>&nbsp;<a href="https://github.com/IGLICT/TM-NET" target="_blank">[code]</a>&nbsp;<a href="https://www.youtube.com/watch?v=olRrGX_ZD2Y" target="_blank">[video]</a>&nbsp;<a href="https://doi.org/10.1145/3478513.3480503" target="_blank">[doi]</a></td></tr>						
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2186,7 +2468,7 @@ Ran Yi, Mengfei Xia, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 43(10), pp. 3462-3475, 2021.<br>
 <a href="http://orca.cf.ac.uk/130961/1/APDrawingGAN%2B%2B_TPAMI.pdf">[paper]</a>&nbsp;<a href="https://github.com/yiranran/APDrawingGAN2" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TPAMI.2020.2987931" target="_blank">[doi]</a></td></tr>						
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2211,7 +2493,7 @@ Ran Yi, Zipeng Ye, Wang Zhao, Minjing Yu, Yu-Kun Lai, Yong-Jin Liu<br>
 <a href="http://orca.cf.ac.uk/130659/1/FCSS-TPAMI2020.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://github.com/yiranran/FCSS" target="_blank">[code]</a>&nbsp;<a href="https://doi.org/10.1109/TPAMI.2020.2979714" target="_blank">[doi]</a></td></tr>				
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2236,7 +2518,7 @@ Qian Xie, Yu-Kun Lai, Jing Wu, Zhoutao Wang, Yiming Zhang, Kai Xu, Jun Wang<br>
 
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2262,7 +2544,7 @@ Lin Gao, Ling-Xiao Zhang, Hsien-Yu Meng, Yi-Hui Ren, Yu-Kun Lai, Leif Kobbelt<br
 				
 <tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2287,7 +2569,7 @@ Lin Gao, Yu-Kun Lai, Jie Yang, Ling-Xiao Zhang, Shihong Xia, Leif Kobbelt<br>
 <a href="papers/SparseDeformation_TVCG.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2019.2941200" target="_blank">[doi]</a>&nbsp;<a href="https://www.youtube.com/watch?v=q-jLXujXJ7k" target="_blank">[video]</a>&nbsp;</td></tr>
 			<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2314,7 +2596,7 @@ Yun Zhang, Yu-Kun Lai, Fang-Lue Zhang<br>
 				
 							<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2338,7 +2620,7 @@ Suiyun Zhang, Zhizhong Han, Yu-Kun Lai, Matthias Zwicker, Hui Zhang<br>
 <em>IEEE Transactions on Visualization and Computer Graphics</em>, vol. 27(4), pp. 2250-2264, 2021.<br>
 <a href="papers/SmallObjectArrangementTVCG2019.pdf">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TVCG.2019.2949295" target="_blank">[doi]</a></td></tr>
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2362,7 +2644,7 @@ Xiaoping Wu, Jianlong Chang, Yu-Kun Lai, Jufeng Yang, Qi Tian<br>
 <a href="https://orca.cardiff.ac.uk/143075/1/BiSPL_TIP.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TIP.2021.3094744" target="_blank">[doi]</a></td></tr>				
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2386,7 +2668,7 @@ Haodi Hou, Jing Huo, Jing Wu, Yu-Kun Lai, Yang Gao<br>
 <a href="https://orca.cardiff.ac.uk/145737/1/mwgan_tip_postprint.pdf" target="_blank">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TIP.2021.3118984" target="_blank">[doi]</a></td></tr>				
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2410,7 +2692,7 @@ Kun Li, Hao Wen, Qiao Feng, Yuxiang Zhang, Xiongzheng Li, Jing Huang, Cunkuan Yu
 <a href="https://orca.cardiff.ac.uk/141998/1/MGTnet-TIP.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://github.com/1020244018/MGTnet" target=_blank>[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TIP.2021.3080177" target="_blank">[doi]</a></td></tr>				
 				
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2434,7 +2716,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			</td></tr>				
 
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2457,7 +2739,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			</td></tr>				
 
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2480,7 +2762,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			</td></tr>				
 				
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2503,7 +2785,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			</td></tr>				
 
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2525,7 +2807,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			<a href="https://orca.cardiff.ac.uk/143846/1/MLVSNet_ICCV2021.pdf">[paper]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_MLVSNet_Multi-Level_Voting_Siamese_Network_for_3D_Visual_Tracking_ICCV_2021_paper.pdf" target=_blank>[official version]</a>&nbsp;<a href="https://github.com/CodeWZT/MLVSNet" target="_blank">[code]</a>
 			</td></tr>				
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2547,7 +2829,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			<a href="https://orca.cardiff.ac.uk/143843/1/VENet_ICCV2021.pdf">[paper]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Xie_VENet_Voting_Enhancement_Network_for_3D_Object_Detection_ICCV_2021_paper.pdf" target=_blank>[official version]</a>
 			</td></tr>				
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2569,7 +2851,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			<a href="https://orca.cardiff.ac.uk/140565/1/PISE_CVPR2021.pdf">[paper]</a>&nbsp;<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_PISE_Person_Image_Synthesis_and_Editing_With_Decoupled_GAN_CVPR_2021_paper.pdf" target=_blank>[official version]</a>&nbsp;<a href="https://github.com/Zhangjinso/PISE" target="_blank">[code]</a>
 			</td></tr>				
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2592,7 +2874,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 			</td></tr>				
 
 								<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2630,7 +2912,7 @@ Feature for Micro-Expression Recognition</b><br />Yong-Jin Liu, Bing-Jun Li, Yu-
 
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2657,7 +2939,7 @@ Sheng Yang, Beichen Li, Yan-Pei Cao, Hongbo Fu, Yu-Kun Lai, Leif Kobbelt, Shi-Mi
 
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2681,7 +2963,7 @@ Yun-Peng Xiao, Yu-Kun Lai, Fang-Lue Zhang, Chunpeng Li, Lin Gao<br>
 <a href="http://orca.cf.ac.uk/132484/1/DeepGeometryLearning.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://doi.org/10.1007/s41095-020-0174-8" target="_blank">[doi]</a></td></tr>				
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2707,7 +2989,7 @@ Bo Li, Yu-Kun Lai, Paul L. Rosin<br>
 				
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2732,7 +3014,7 @@ Jingyu Yang, Ji Xu, Kun Li, Yu-Kun Lai, Huanjing Yue, Jianzhi Lu, Hao Wu, Yebin 
 <a href="http://orca.cf.ac.uk/130860/1/Indoor3D_TIP.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://doi.org/10.1109/TIP.2020.2986712" target="_blank">[doi]</a></td></tr>	
 				
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2756,7 +3038,7 @@ Ran Yi, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 <a href="http://orca.cf.ac.uk/130656/1/UnpairedPortraitDrawing-CVPR2020.pdf" target="_blank">[paper]</a>&nbsp;<a href="https://github.com/yiranran/Unpaired-Portrait-Drawing" target="_blank">[code]</a>&nbsp;<a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Yi_Unpaired_Portrait_Drawing_Generation_via_Asymmetric_Cycle_Mapping_CVPR_2020_paper.pdf" target="_blank">[official version]</a></td></tr>	
 
 		<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2780,7 +3062,7 @@ Qian Xie, Yu-Kun Lai, Jing Wu, Zhoutao Wang, Yiming Zhang, Kai Xu, Jun Wang<br>
 <a href="http://orca.cf.ac.uk/130653/1/MLCVNet-CVPR2020.pdf" target=_blank>[paper]</a>&nbsp;<a href="https://github.com/NUAAXQ/MLCVNet" target="_blank">[code]</a>&nbsp;<a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Xie_MLCVNet_Multi-Level_Context_VoteNet_for_3D_Object_Detection_CVPR_2020_paper.pdf" target="_blank">[official version]</a></td></tr>	
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2805,7 +3087,7 @@ Fang Liu, Changqing Zou, Xiaoming Deng, Ran Zuo, Yu-Kun Lai, Cuixia Ma, Yong-Jin
 
 				
 				<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2826,12 +3108,12 @@ Fang Liu, Changqing Zou, Xiaoming Deng, Ran Zuo, Yu-Kun Lai, Cuixia Ma, Yong-Jin
 			</td><td>&nbsp;</td><td><strong>Ranking-Preserving Cross-Source Learning for
 Image Retargeting Quality Assessment</strong><br>
 Yong-Jin Liu, Yiheng Han, Zipeng Ye, Yu-Kun Lai<br>
-<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, to appear.<br>
+<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 42(7), pp. 1798-1805, 2020.<br>
 <a href="papers/retargeting-OQA-TPAMI.pdf">[paper]</a>&nbsp;<a href="http://cg.cs.tsinghua.edu.cn/people/~Yongjin/OQA%20Source%20code.zip" target="_blank">[code]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TPAMI.2019.2923998" target="_blank">[doi]</a></td></tr>				
 
 							
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2851,12 +3133,12 @@ Yong-Jin Liu, Yiheng Han, Zipeng Ye, Yu-Kun Lai<br>
 		             </table>
 			</td><td>&nbsp;</td><td><strong>HeteroFusion: Dense Scene Reconstruction Integrating Multi-sensors</strong><br>
 Sheng Yang, Beichen Li, Minghua Liu, Yu-Kun Lai, Leif Kobbelt, Shi-Min Hu<br>
-<em>IEEE Transactions on Visualization and Computer Graphics</em>, to appear.<br>
+<em>IEEE Transactions on Visualization and Computer Graphics</em>, vol. 26(11), pp. 3217-3230, 2020.<br>
 <a href="papers/HeteroFusion-TVCG2019.pdf">[paper]</a>&nbsp;<a href="papers/HeteroFusion-SupDoc.pdf">[supplementary]</a>&nbsp;<a href="papers/HeteroFusion-Video.mp4" target="_blank">[video]</a>&nbsp;<a href="http://dx.doi.org/10.1109/TVCG.2019.2919619" target="_blank">[doi]</a></td></tr>
 
 			<tr><td width=300>
 				<br />
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2882,7 +3164,7 @@ Shi-Min Hu, Jun-Xiong Cai, Yu-Kun Lai<br>
 
 							<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2908,7 +3190,7 @@ Ming-Ming Cheng, Xiao-Chang Liu, Jie Wang, Shao-Ping Lu, Yu-Kun Lai, Paul L. Ros
 				
 							<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2934,7 +3216,7 @@ Dongyu She, Jufeng Yang, Ming-Ming Cheng, Yu-Kun Lai, Paul L. Rosin, Liang Wang<
 
 							<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -2960,7 +3242,7 @@ Kun Li, Jinsong Zhang, Yebin Liu, Yu-Kun Lai, Qionghai Dai<br>
 				
 				
 					<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3000,7 +3282,7 @@ Kun Li, Jinsong Zhang, Yebin Liu, Yu-Kun Lai, Qionghai Dai<br>
 				
 			<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3026,7 +3308,7 @@ Springer, ISBN 978-3-030-28603-3, 2019.<br>
 				
 			<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3053,7 +3335,7 @@ Lin Gao, Jie Yang, Tong Wu, Yu-Jie Yuan, Hongbo Fu, Yu-Kun Lai, Hao Zhang<br>
 				
 			<tr><td width=300>
 				<br/>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3080,7 +3362,7 @@ Kun Li, Jingyu Yang,  Yu-Kun Lai, Daoliang Guo<br>
 	
 				
 					<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3106,7 +3388,7 @@ Bo Li, Yu-Kun Lai, Matthew John, Paul L. Rosin<br>
 			</td></tr>		
 
 					<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3133,7 +3415,7 @@ Bo Li, Yu-Kun Lai, Matthew John, Paul L. Rosin<br>
 
 				
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3159,7 +3441,7 @@ Eva G. Krumhuber, Yu-Kun Lai, Paul L. Rosin, Kurt Hugenberg<br>
 			</td></tr>
 
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3182,7 +3464,7 @@ APDrawingGAN: Generating Artistic Portrait Drawings from Face Photo swith Hierar
 Ran Yi, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) </em>, 2019 (oral).<br>
 <a href="papers/APDrawingGAN-CVPR2019.pdf">[paper]</a>&nbsp;<a href="papers/APDrawingGAN-CVPR2019-supp.pdf">[supplementary]</a>&nbsp;<a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Yi_APDrawingGAN_Generating_Artistic_Portrait_Drawings_From_Face_Photos_With_Hierarchical_CVPR_2019_paper.html" target=_blank>[official version]</a><!--&nbsp;<a href="javascript:togglebox('bib_cvpr_apdrawing')">[bibtex]</a><br>
-	<div id='bib_cvpr_apdrawing' name='bib_cvpr' border='1' width=800 style="width:800px; border-color:#777777; border-style:solid; background-color:#CCCCFF; margin: 10px; padding: 10px; display:none">
+	<div id='bib_cvpr_apdrawing' name='bib_cvpr' class="infobox" style="display:none">
 @inproceedings{Yi2019cvpr,<br>
     title = "APDrawingGAN: Generating Artistic Portrait Drawings from Face Photo swith Hierarchical GANs",<br>
 	booktitle = "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",<br>
@@ -3193,7 +3475,7 @@ Ran Yi, Yong-Jin Liu, Yu-Kun Lai, Paul L. Rosin<br>
 				
 				
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3219,7 +3501,7 @@ Xiaoping Wu, Chi Zhan, Yu-Kun Lai, Ming-Ming Cheng, Jufeng Yang<br>
 			</td></tr>
 
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3247,7 +3529,7 @@ Fang Liu, Xiaoming Deng, Yu-Kun Lai, Yong-Jin Liu, Cuixia Ma, Hongan Wang<br>
 				
 
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3274,7 +3556,7 @@ Hsien-Yu Meng, Lin Gao, Yu-Kun Lai, Dinesh Manocha<br>
 
 				
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3301,7 +3583,7 @@ Xiaoping Wu, Ni Wen, Jie Liang, Yu-Kun Lai, Dongyu She, Ming-Ming Cheng, Jufeng 
 
 				
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3328,7 +3610,7 @@ Xingxu Yao, Dongyu She, Sicheng Zhao, Jie Liang, Yu-Kun Lai, Jufeng Yang<br>
 
 				
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3356,7 +3638,7 @@ Jiahui Huang, Sheng Yang, Zishuo Zhao, Yu-Kun Lai, Shi-Min Hu<br>
 				
 
 							<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3404,7 +3686,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			<table border="0">
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3432,7 +3714,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 				
 				
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3455,7 +3737,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>
 
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3481,7 +3763,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 	
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3504,7 +3786,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3529,7 +3811,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			
 					
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3552,7 +3834,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3575,7 +3857,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3598,7 +3880,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>			
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3622,7 +3904,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>			
 
 						<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3647,7 +3929,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 
 			
 			<tr><td width=300>
-			 <table border="0" cellpadding="0" cellspacing="0">
+			 <table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3671,7 +3953,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 
 			
 			<tr><td width=300>
-			 <table border="0" cellpadding="0" cellspacing="0">
+			 <table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3694,7 +3976,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>
 
 			<tr><td width=300>
-			 <table border="0" cellpadding="0" cellspacing="0">
+			 <table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3719,7 +4001,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3742,7 +4024,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3766,7 +4048,7 @@ Sheng Yang, Zheng-Fei Kuang, Yan-Pei Cao, Yu-Kun Lai, Shi-Min Hu <br>
 				
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3790,7 +4072,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>		
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3814,7 +4096,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				
 				
 <tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3845,7 +4127,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
             <hr>
 			<table border="0">
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3869,7 +4151,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3893,7 +4175,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3916,7 +4198,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>
 			
 			<tr><td width=300>
-			<table border="0" cellpadding="0" cellspacing="0">
+			<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3940,7 +4222,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3964,7 +4246,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -3987,7 +4269,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>			
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4011,7 +4293,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4036,7 +4318,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 	
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4059,7 +4341,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>			
 	
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4082,7 +4364,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4105,7 +4387,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>	
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4128,7 +4410,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>	
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4152,7 +4434,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>	
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4182,7 +4464,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
             <hr>
 			<table>
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4205,7 +4487,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			<a href="papers/DeformationTOG2016.pdf">[paper]</a>&nbsp;<a href="http://dx.doi.org/10.1145/2908736" target=_blank>[doi]</a>&nbsp;<a href="https://youtu.be/Z4b-Kw9E_co" target=_blank>[video]</a>&nbsp;<a href="papers/tog2016.pdf">[cover]</a></td></tr>	
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4230,7 +4512,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4254,7 +4536,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>	
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4279,7 +4561,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4303,7 +4585,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4327,7 +4609,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4351,7 +4633,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4381,7 +4663,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
             <hr>
 			<table>
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4405,7 +4687,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>				
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4429,7 +4711,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			</td></tr>				
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4453,7 +4735,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>				
 				
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4477,7 +4759,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>					
 					
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4501,7 +4783,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>					
 					
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4535,7 +4817,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 			<table>
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4559,7 +4841,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>	
 				
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -4584,7 +4866,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 					
 					
 					<tr><td width=300>
-								<table border="0" cellpadding="0" cellspacing="0">
+								<table class="frame" border="0" cellpadding="0" cellspacing="0">
 					           <tr>
 					             <td><img src="imgs/photo_corner_1.gif"></td>
 					             <td background="imgs/photo_back_top.gif"></td>
@@ -4608,7 +4890,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 						</td></tr>
 						
 					<tr><td width=300>
-								<table border="0" cellpadding="0" cellspacing="0">
+								<table class="frame" border="0" cellpadding="0" cellspacing="0">
 					           <tr>
 					             <td><img src="imgs/photo_corner_1.gif"></td>
 					             <td background="imgs/photo_back_top.gif"></td>
@@ -4632,7 +4914,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 						</td></tr>
 
 					<tr><td width=300>
-								<table border="0" cellpadding="0" cellspacing="0">
+								<table class="frame" border="0" cellpadding="0" cellspacing="0">
 					           <tr>
 					             <td><img src="imgs/photo_corner_1.gif"></td>
 					             <td background="imgs/photo_back_top.gif"></td>
@@ -4657,7 +4939,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 					<tr><td width=300>
-								<table border="0" cellpadding="0" cellspacing="0">
+								<table class="frame" border="0" cellpadding="0" cellspacing="0">
 					           <tr>
 					             <td><img src="imgs/photo_corner_1.gif"></td>
 					             <td background="imgs/photo_back_top.gif"></td>
@@ -4682,7 +4964,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4706,7 +4988,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>
 				
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4732,7 +5014,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4756,7 +5038,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>				
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4789,7 +5071,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 		<table>
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4814,7 +5096,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>				
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4839,7 +5121,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4865,7 +5147,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				
 				
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -4890,7 +5172,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 				</td></tr>		
 				
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -4914,7 +5196,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 					</td></tr>		
 
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -4939,7 +5221,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -4964,7 +5246,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 			
 
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -4988,7 +5270,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 					</td></tr>		
 
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -5014,7 +5296,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
 
 
 				<tr><td width=300>
-							<table border="0" cellpadding="0" cellspacing="0">
+							<table class="frame" border="0" cellpadding="0" cellspacing="0">
 				           <tr>
 				             <td><img src="imgs/photo_corner_1.gif"></td>
 				             <td background="imgs/photo_back_top.gif"></td>
@@ -5044,7 +5326,7 @@ Images with CNNs</b><br />Yi-Ling Qiao, Lin Gao, Yu-Kun Lai, Fang-Lue Zhang, Min
             <hr>
 			<table>
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5069,7 +5351,7 @@ Triangulation</b><br />
 		</td></tr>			
 
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5093,7 +5375,7 @@ Triangulation</b><br />
 		</td></tr>			
 		
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5124,7 +5406,7 @@ Triangulation</b><br />
             <hr>
 			<table>
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5156,7 +5438,7 @@ Triangulation</b><br />
 <table>
 	
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5181,7 +5463,7 @@ Triangulation</b><br />
 		
 		
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5207,7 +5489,7 @@ Triangulation</b><br />
 
 
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5231,7 +5513,7 @@ Triangulation</b><br />
 		</td></tr>
 		
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5262,7 +5544,7 @@ Triangulation</b><br />
 		    <hr>
 			<table>
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -5286,7 +5568,7 @@ Triangulation</b><br />
 			</td></tr>
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -5312,7 +5594,7 @@ Triangulation</b><br />
 			
 			
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -5336,7 +5618,7 @@ Triangulation</b><br />
 			</td></tr>
 
 			<tr><td width=300>
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table class="frame" border="0" cellpadding="0" cellspacing="0">
 			           <tr>
 			             <td><img src="imgs/photo_corner_1.gif"></td>
 			             <td background="imgs/photo_back_top.gif"></td>
@@ -5366,7 +5648,7 @@ Triangulation</b><br />
 
 <table>
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5390,7 +5672,7 @@ Triangulation</b><br />
 	</td></tr>
 	
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5420,7 +5702,7 @@ Triangulation</b><br />
 <hr>
 <table>
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5444,7 +5726,7 @@ Triangulation</b><br />
 	</td></tr>	
 
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5476,7 +5758,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 <hr>
 <table>
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5501,7 +5783,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 	
 
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5526,7 +5808,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 
 
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5550,7 +5832,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 	</td></tr>	
 
 	<tr><td width=300>
-				<table border="0" cellpadding="0" cellspacing="0">
+				<table class="frame" border="0" cellpadding="0" cellspacing="0">
 	           <tr>
 	             <td><img src="imgs/photo_corner_1.gif"></td>
 	             <td background="imgs/photo_back_top.gif"></td>
@@ -5583,7 +5865,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 
 <table>
 		<tr><td width=300>
-					<table border="0" cellpadding="0" cellspacing="0">
+					<table class="frame" border="0" cellpadding="0" cellspacing="0">
 		           <tr>
 		             <td><img src="imgs/photo_corner_1.gif"></td>
 		             <td background="imgs/photo_back_top.gif"></td>
@@ -5628,7 +5910,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
   <li>Gold Medal in National Olympiad in Informatics (NOI) of China, 1998.</li>
 </ul>
 <p class="heading"><a name="education" id="prizes2"></a>Education  &nbsp;   <a href="#top" class="txt">Top</a></p>
-<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+<table class="edu" width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr class="txt">
     <td width="205" valign="top">09/1999-07/2003</td>
     <td width="616" valign="top">Dept. of Computer Science and Technology, Tsinghua University, China</td>
@@ -5651,8 +5933,7 @@ Helmut Pottmann, Johannes Wallner, Yong-Liang Yang, Yu-Kun Lai, Shi-Min Hu<BR>
 <p>&nbsp;</p>
 <p class="heading">Visiting Experience     <a href="#top" class="txt"> Top</a></p>
 <p> 10/2007-04/2008&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Center for Visual Computing, <a href="http://www.sunysb.edu" target="_blank">State University of New York at Stony Brook</a>, Stony Brook, NY 11790, USA.</p>
-<p><a align="right" href="http://www2.clustrmaps.com/counter/maps.php?url=http://users.cs.cf.ac.uk/Yukun.Lai" id="clustrMapsLink"><img src="http://www2.clustrmaps.com/counter/index2.php?url=http://users.cs.cf.ac.uk/Yukun.Lai" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" width=5 onerror="this.onerror=null; this.src='http://clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com';" />
-</a></p></td>
+</td>
 	  </tr>
 	  <tr>
 	    <td class="txt">&nbsp;</td>

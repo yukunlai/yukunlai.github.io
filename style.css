@@ -1,34 +1,185 @@
+/* ------------------------------------------------------------------
+   Main stylesheet for index.htm
+   Desktop layout is kept close to the original; the media query at the
+   bottom reflows the table-based layout into a single column on phones.
+   ------------------------------------------------------------------ */
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
 body {
-	FONT-SIZE: 9pt; COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+	margin: 20px 20px 20px 30px;
+	background: #fff url(imgs/homeback.jpg) no-repeat fixed;
+	color: #000;
+	font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	overflow-wrap: break-word;
 }
+
+/* Text helpers (sizes are relative so they scale with the body size) */
 .txt {
-	FONT-SIZE: 9pt; COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
-}
-.subHeading {
-	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: black;FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
-}
-.heading {
-	FONT-WEIGHT: bold;
-	FONT-SIZE: 12pt;
-	COLOR: black;
-	FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif;
-	font-variant: small-caps;
-}
-.footer {
-	FONT-SIZE: 7pt; COLOR: #8e8e8e; LINE-HEIGHT: 7pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+	font-size: 1em;
+	line-height: 1.6;
 }
 .smalltxt {
-	FONT-SIZE: 8pt;COLOR: black; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Tahoma, Helvetica, Arial, Sans-Serif
+	font-size: 0.9em;
 }
-A:visited {
-	COLOR: #333333;
+.subHeading {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 1.4em;
+}
+.heading {
+	font-weight: bold;
+	font-size: 1.3em;
+	font-variant: small-caps;
+}
+/* The year links nest several unclosed .heading spans; stop sizes compounding */
+.heading .heading,
+.heading .txt {
+	font-size: 1em;
+}
+.footer {
+	font-size: 0.75em;
+	color: #8e8e8e;
+}
+
+a:link,
+a:visited {
+	color: #333;
 	text-decoration: underline;
 }
-A:link{
-	COLOR: #333333;
-	text-decoration: underline;
+a:hover,
+a:focus {
+	color: #9900ff;
 }
-A:hover {
-	COLOR: #9900FF;
-	text-decoration: underline;
+
+ul {
+	padding-left: 1.6em;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #bbb;
+}
+
+/* Overall page layout (outer table) */
+.layout {
+	max-width: 1400px;
+}
+
+/* "Selected Publications" year index */
+.pubnav .years {
+	margin-left: 2em;
+	font-size: 1.05em;
+	font-variant: small-caps;
+	word-spacing: 0.35em;
+}
+
+/* Thumbnails with drop-shadow frame (the corner/edge GIFs) */
+.frame img {
+	display: block;
+}
+
+/* Publication rows: keep thumbnails top-aligned with a little spacing */
+table:not(.frame) > tbody > tr > td > table.frame {
+	margin: 4px 0;
+}
+
+/* Expandable boxes (PhD project descriptions, BibTeX) */
+.infobox {
+	max-width: 800px;
+	box-sizing: border-box;
+	margin: 10px 0;
+	padding: 10px 14px;
+	border: 1px solid #777;
+	background-color: #ccf;
+}
+
+/* Education table */
+.edu td {
+	padding: 2px 12px 2px 0;
+}
+
+/* ------------------------------------------------------------------
+   Phones and narrow windows
+   ------------------------------------------------------------------ */
+@media (max-width: 760px) {
+	body {
+		margin: 0;
+		padding: 12px 16px 24px;
+		background-image: none;
+		font-size: 15px;
+	}
+
+	/* Turn every layout table into stacked blocks, but leave the small
+	   thumbnail frame tables as real tables so the shadow stays intact. */
+	table:not(.frame),
+	table:not(.frame) > tbody,
+	table:not(.frame) > tbody > tr,
+	table:not(.frame) > tbody > tr > td {
+		display: block;
+		width: auto !important;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.gutter {
+		display: none;
+	}
+
+	/* Profile header: photo first, then contact details */
+	table.intro > tbody > tr {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.intro > tbody > tr > td {
+		padding: 0 0 10px !important;
+	}
+	.pubnav .years {
+		display: block;
+		margin: 0.4em 0 0;
+	}
+
+	/* Publications: thumbnail on top, details underneath */
+	table:not(.intro) > tbody > tr:has(> td > table.frame) {
+		margin-bottom: 1.6em;
+	}
+	table:not(.intro) > tbody > tr:has(> td > table.frame) > td:nth-child(2) {
+		display: none; /* the &nbsp; spacer column */
+	}
+	table:not(.intro) > tbody > tr:has(> td > table.frame) > td {
+		padding: 0;
+	}
+	.frame img {
+		max-width: calc(100vw - 50px);
+		height: auto;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Education: date on its own line */
+	.edu > tbody > tr {
+		margin-bottom: 0.8em;
+	}
+	.edu > tbody > tr > td {
+		padding: 0;
+	}
+	.edu > tbody > tr > td:first-child {
+		font-weight: bold;
+	}
+
+	.infobox {
+		margin: 8px 0;
+	}
+
+	ul {
+		padding-left: 1.3em;
+	}
 }
